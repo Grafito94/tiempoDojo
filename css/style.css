@@ -1,0 +1,128 @@
+/* Reset */
+
+*{  
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #9fc5f8;
+
+}
+
+nav{
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height:80px;
+    color:white;
+}
+
+nav ul{
+    width: 40%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+main{
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+.sanJose{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+.row{
+    display:flex;
+    margin-top:20px;
+}
+
+.dia{
+    flex:1;
+    background-color: lightgray;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.diaUltimo{
+    flex:1;
+    background-color: lightgray;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 0;
+}
+
+.temperatures{
+    display:flex;
+    justify-content: space-around;
+}
+
+.row .dia img{
+    margin-top: 20px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.row .diaUltimo img{
+    margin-top: 20px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.row .dia p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.row .diaUltimo p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.tempMax{
+    color:red;
+
+}
+
+.tempMin{
+    color:blue;
+
+}
+
+footer{
+    display: flex;
+    border: 2px solid black;
+    margin: 0px 130px 0px 130px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom:0;
+}
+
+.text{
+    text-align: center;
+}

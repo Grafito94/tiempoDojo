@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Dojo weater</h1>
+            <ul>    
+                <li>
+                    <a href = "#" onclick="loadingw(`Burbanck`)">burbank</a>
+                </li>
+                <li>
+                    <a href = "#" onclick="loadingw(`Chicago`)">Chicago</a>
+                </li>
+                <li>
+                    <a href = "#" onclick="loadingw(`Dallas`)">Dallas</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class = "sanJose">
+            <h2>San Jose</h2>
+            <form>
+                <label>Show temperature</label>
+                <select onchange = "changeTemp(this)">
+                    <option>C</option>
+                    <option>F</option>
+                </select>
+            </form>
+        </div>
+        <div class = "row">
+            <div class ="dia">
+                <h2>Today</h2>
+                <img src = "images/some_rain.png" alt="someRain">
+                <p>Some rain</p>
+                <div class = "temperatures">
+                    <span class = "tempMax" id = "Tmax1">24</span>
+                    <span class = "tempMin" id = "Tmin1">18</span>
+                </div>
+            </div>
+            <div class ="dia">
+                <h2>Tomorrow</h2>
+                <img src = "images/some_sun.png" alt="someSun">
+                <p>Some sun</p>
+                <div class = "temperatures">
+                    <span class = "tempMax" id = "Tmax2">27</span>
+                    <span class = "tempMin" id = "Tmin2">19</span>
+                </div>
+            </div>
+            <div class ="dia">
+                <h2>Friday</h2>
+                <img src = "images/some_rain.png" alt="someRain">
+                <p>Some clouds</p>
+                <div class = "temperatures">
+                    <span class = "tempMax" id = "Tmax3">21</span>
+                    <span class = "tempMin" id = "Tmin3">16</span>
+                </div>
+            </div>
+            <div class ="diaUltimo">
+                <h2>Saturday</h2>
+                <img src = "images/some_sun.png" alt="someSun">
+                <p>Some sun</p>
+                <div class = "temperatures">
+                    <span class = "tempMax" id = "Tmax4">26</span>
+                    <span class = "tempMin" id = "Tmin4">21</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class = "cookie">
+            <img src="images/cookie.png"alt = "cookie">
+        </div class ="text">
+            <h2>Stop Cokiees</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. ∫Voluptas perspiciatis ipsam placeat impedit similique praesentium minima dolorum architecto officiis quisquam est sunt, molestias reiciendis dolores quaerat labore rem culpa. Eligendi?</p>
+        </div>
+        <div>
+            <button onclick = "removeCookie()">Accept</button>
+        </div>
+    </footer>
+    <script src = "js/script.js"></script>
+</body>
+</html>
